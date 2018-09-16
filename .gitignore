@@ -3,5 +3,5 @@
 /.idea/
 /.settings/
 /test-output/
-.classpath
-test.iml
+/.classpath
+/test.iml
