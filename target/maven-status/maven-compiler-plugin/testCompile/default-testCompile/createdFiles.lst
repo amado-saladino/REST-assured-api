@@ -1,9 +1,0 @@
-request\delete\test\TestDelete.class
-com\data\Faker.class
-request\put\PUTRequest.class
-request\models\User.class
-request\post\test\PostComplexTest.class
-request\get\test\GetRequestTest.class
-request\patch\test\TestPatchRequest.class
-request\models\Info.class
-com\utilities\Factory.class
