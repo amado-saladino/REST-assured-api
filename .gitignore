@@ -1,7 +1,6 @@
 
-/bin/
 /.idea/
 /.settings/
 /test-output/
-.classpath
+/.classpath
 /test.iml
