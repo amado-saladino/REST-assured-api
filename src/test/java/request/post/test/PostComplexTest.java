@@ -3,6 +3,7 @@ package request.post.test;
 import com.utilities.Factory;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import request.models.User;
@@ -15,8 +16,9 @@ public class PostComplexTest {
     SoftAssert softAssert = new SoftAssert();
     final String url="http://localhost:3000/users";
     int userCount;
-
-    @Test(priority = 1)
+        
+    
+    @Test
     public void postComplexUser(){
         User user= Factory.createComplexUser();
         userCount=Factory.getUserCount();
@@ -41,7 +43,7 @@ public class PostComplexTest {
         softAssert.assertAll();
     }
 
-    @Test(priority = 2,dependsOnMethods = "postComplexUser")
+    @Test(dependsOnMethods = "postComplexUser")
     public void testGetUsers() {
 
         Response response=given()
@@ -52,7 +54,7 @@ public class PostComplexTest {
         response.then().body("size()",is( userCount+1 ));
     }
 
-    @Test(priority = 3)
+    @Test
     public void testPostUserWithInfos(){
 
         userCount=Factory.getUserCount();

@@ -2,5 +2,6 @@
 /.idea/
 /.settings/
 /test-output/
-/.classpath
+/target/
+.classpath
 /test.iml
