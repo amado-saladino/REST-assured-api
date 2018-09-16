@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="17462" started-at="2018-09-16T17:08:18Z" finished-at="2018-09-16T17:08:36Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="17462" started-at="2018-09-16T17:08:18Z" finished-at="2018-09-16T17:08:36Z">
+      <class name="request.put.PUTRequest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:request.put.PUTRequest@1e67b872]" name="setup" is-config="true" duration-ms="3142" started-at="2018-09-16T20:08:32Z" finished-at="2018-09-16T20:08:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="updateLastUser()[pri:0, instance:request.put.PUTRequest@1e67b872]" name="updateLastUser" duration-ms="262" started-at="2018-09-16T20:08:35Z" finished-at="2018-09-16T20:08:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateLastUser -->
+      </class> <!-- request.put.PUTRequest -->
+      <class name="request.delete.test.TestDelete">
+        <test-method status="PASS" signature="setup()[pri:0, instance:request.delete.test.TestDelete@4cb2c100]" name="setup" is-config="true" duration-ms="46" started-at="2018-09-16T20:08:35Z" finished-at="2018-09-16T20:08:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testDeleteUser()[pri:0, instance:request.delete.test.TestDelete@4cb2c100]" name="testDeleteUser" duration-ms="53" started-at="2018-09-16T20:08:35Z" finished-at="2018-09-16T20:08:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUser -->
+      </class> <!-- request.delete.test.TestDelete -->
+      <class name="request.get.test.GetRequestTest">
+        <test-method status="PASS" signature="testItReturnsTheRightValuesForOneCity()[pri:0, instance:request.get.test.GetRequestTest@246ae04d]" name="testItReturnsTheRightValuesForOneCity" duration-ms="9487" started-at="2018-09-16T20:08:18Z" finished-at="2018-09-16T20:08:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testItReturnsTheRightValuesForOneCity -->
+        <test-method status="PASS" signature="testResponseBody()[pri:0, instance:request.get.test.GetRequestTest@246ae04d]" name="testResponseBody" duration-ms="949" started-at="2018-09-16T20:08:28Z" finished-at="2018-09-16T20:08:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseBody -->
+        <test-method status="PASS" signature="testResponseCode()[pri:0, instance:request.get.test.GetRequestTest@246ae04d]" name="testResponseCode" duration-ms="905" started-at="2018-09-16T20:08:29Z" finished-at="2018-09-16T20:08:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode -->
+        <test-method status="PASS" signature="testResponseCodeWithBDD()[pri:0, instance:request.get.test.GetRequestTest@246ae04d]" name="testResponseCodeWithBDD" duration-ms="1219" started-at="2018-09-16T20:08:30Z" finished-at="2018-09-16T20:08:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCodeWithBDD -->
+        <test-method status="PASS" signature="testResponseWithParams()[pri:0, instance:request.get.test.GetRequestTest@246ae04d]" name="testResponseWithParams" duration-ms="1096" started-at="2018-09-16T20:08:31Z" finished-at="2018-09-16T20:08:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseWithParams -->
+      </class> <!-- request.get.test.GetRequestTest -->
+      <class name="request.patch.test.TestPatchRequest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:request.patch.test.TestPatchRequest@3f2a3a5]" name="setup" is-config="true" duration-ms="147" started-at="2018-09-16T20:08:35Z" finished-at="2018-09-16T20:08:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="updateUserbyName()[pri:0, instance:request.patch.test.TestPatchRequest@3f2a3a5]" name="updateUserbyName" duration-ms="47" started-at="2018-09-16T20:08:35Z" finished-at="2018-09-16T20:08:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserbyName -->
+      </class> <!-- request.patch.test.TestPatchRequest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
