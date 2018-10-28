@@ -1,5 +1,7 @@
 package request.get.test;
 
+
+import org.apache.logging.log4j.*;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 import io.restassured.response.Response;
@@ -7,7 +9,8 @@ import org.testng.asserts.SoftAssert;
 import static org.hamcrest.Matchers.*;
 
 public class GetRequestTest {
-	
+
+	private final static Logger logger = LogManager.getLogger(GetRequestTest.class);
 	private SoftAssert softAssert = new SoftAssert();
 	  
 	final String key="b6907d289e10d714a6e88b30761fae22";
@@ -17,7 +20,10 @@ public class GetRequestTest {
 	
 	@Test
 	public void testResponseCode() {
-		
+
+		logger.error("Test status code");
+		logger.info("log some info");
+
 		response= get(url);
 		code=response.getStatusCode();
 		long time=response.time();
