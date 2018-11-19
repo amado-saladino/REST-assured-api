@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Suite" parallel="true">
 	<test name="Test">
-		<classes>
+		<classes preserve-order="true">
 			<class name="request.put.PUTRequest" />
 			<class name="request.post.test.PostComplexTest" />
 			<class name="request.get.test.GetRequestTest" />			
