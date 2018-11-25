@@ -60,4 +60,4 @@ given this json file:
 ```sh
 mvn test
 ```
-Good luck
+Good luck  :)
