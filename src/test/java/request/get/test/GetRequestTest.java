@@ -1,12 +1,14 @@
 package request.get.test;
 
-
-import org.apache.logging.log4j.*;
-import org.testng.annotations.Test;
-import static io.restassured.RestAssured.*;
 import io.restassured.response.Response;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import static org.hamcrest.Matchers.*;
+
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.is;
 
 public class GetRequestTest {
 
@@ -55,7 +57,6 @@ public class GetRequestTest {
 		.then().statusCode(200).body("sys.country", equalTo("GB") )
 		.and().body("name", equalTo("London"));
 	}
-	
 	
 	@Test
 	public void testResponseWithParams() {
