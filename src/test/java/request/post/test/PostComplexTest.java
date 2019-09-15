@@ -16,7 +16,6 @@ public class PostComplexTest {
     SoftAssert softAssert = new SoftAssert();
     final String url="http://localhost:3000/users";
     int userCount;
-        
     
     @Test
     public void postComplexUser(){

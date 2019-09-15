@@ -22,7 +22,6 @@ public class GetRequestTest {
 	
 	@Test
 	public void testResponseCode() {
-
 		logger.error("Test status code");
 		logger.info("log some info");
 
@@ -33,26 +32,20 @@ public class GetRequestTest {
 		
 		System.out.println("Status Code is: " + code);
 		System.out.println("Response Time is: " + time);
-
 		
 		softAssert.assertEquals(code, 200);
-		
 		softAssert.assertAll();
 	}
-	
-	
+
 	@Test
 	public void testItReturnsTheRightValuesForOneCity() {
-		
 		when().get(url)
 		.then().body("coord.size()", is(2))
 		.and().body("size()", is(12));		
 	}
 	
-	
 	@Test
 	public void testResponseCodeWithBDD() {
-		
 		when().get(url)
 		.then().statusCode(200).body("sys.country", equalTo("GB") )
 		.and().body("name", equalTo("London"));
@@ -60,7 +53,6 @@ public class GetRequestTest {
 	
 	@Test
 	public void testResponseWithParams() {
-		
 		given().param("q", "London")
 		.param("appid", key)
 		.when().get("http://samples.openweathermap.org/data/2.5/weather")
@@ -70,10 +62,8 @@ public class GetRequestTest {
 	
 	@Test
 	public void testResponseBody() {
-		
 		response= get(url);
 		String body= response.asString();
-		
 		System.out.println(body);		
 	}
 		

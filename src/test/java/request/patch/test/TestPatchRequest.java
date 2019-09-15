@@ -25,7 +25,6 @@ public class TestPatchRequest {
 	
 	@Test
 	public void updateUserbyName(){
-						
 		given()
 		.body("{\"name\":\"" + faker.getFemaleFirstName() + "\"}")
 		.when()
